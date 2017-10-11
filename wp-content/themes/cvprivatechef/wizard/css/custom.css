@@ -1,0 +1,240 @@
+.date_initial_class_50{
+    width:46% !important;
+}
+
+.date_initial_class_100{
+    width:100% !important;
+}
+.icon-service1:before{
+    content: url(/wp-content/themes/cvprivatechef/wizard/img/service-1-wizard.png);
+}
+
+.icon-service2:before{
+    content: url(/wp-content/themes/cvprivatechef/wizard/img/service-2-wizard.png);
+}
+
+.icon-service3:before{
+    content: url(/wp-content/themes/cvprivatechef/wizard/img/service-3-wizard.png);
+}
+
+.tac-wizard-light-theme .card-content{
+    color: #ec96c0 !important;
+}
+
+.tac-wizard-light-theme .card-content .section-item label {
+    border: 1px solid #ec96c0 !important;
+}
+
+
+.tac-wizard-light-theme .card-content .section-item input:checked+label {
+    background-color: #ec96c0 !important;
+    border-color: #be1e2c !important;
+}
+
+.tac-wizard-light-theme .tac-button {
+    background-color: #be1e2c;
+    border-color: #ec96c0;
+}
+
+.tac-wizard-light-theme .tac-button:hover {
+    background-color: #be1e2c;
+    border-color: #ec96c0;
+}
+
+.icon-2-ppl:before{
+    content: url(/wp-content/themes/cvprivatechef/wizard/img/2ppl.png);
+}
+
+
+.icon-3-ppl:before{
+    content: url(/wp-content/themes/cvprivatechef/wizard/img/3ppl.png);
+}
+
+.icon-7-ppl:before{
+    content: url(/wp-content/themes/cvprivatechef/wizard/img/7ppl.png);
+}
+
+.icon-13-ppl:before{
+    content: url(/wp-content/themes/cvprivatechef/wizard/img/13ppl.png);
+}
+
+
+.icon-day:before{
+    content: url(/wp-content/themes/cvprivatechef/wizard/img/sun.png);
+}
+
+
+.icon-night:before{
+    content: url(/wp-content/themes/cvprivatechef/wizard/img/moon.png);
+}
+
+
+.icon-coffee:before{
+    content: url(/wp-content/themes/cvprivatechef/wizard/img/coffe.png);
+}
+
+.icon-vegan:before{
+    content: url(/wp-content/themes/cvprivatechef/wizard/img/vegan.png);
+}
+
+.icon-italian:before{
+    content: url(/wp-content/themes/cvprivatechef/wizard/img/italian.png);
+}
+
+.icon-french:before{
+    content: url(/wp-content/themes/cvprivatechef/wizard/img/french.png);
+}
+
+.icon-japanese:before{
+    content: url(/wp-content/themes/cvprivatechef/wizard/img/japanese.png);
+}
+
+.icon-bajamed:before{
+    content: url(/wp-content/themes/cvprivatechef/wizard/img/bajamed.png);
+}
+
+.icon-sorpresa:before{
+    content: url(/wp-content/themes/cvprivatechef/wizard/img/sorpresa.png);
+}
+
+
+
+
+
+
+.card-footer {
+    padding: .75rem 1.25rem;
+    background-color: transparent;
+    border-top: 1px solid transparent;
+}
+
+.wpbs-form-submit{
+    display: none !important;
+}
+
+
+section.active{
+    margin: auto;
+    margin-top:10%;
+    padding: 10px;
+}
+
+.card_rangeofprices .card-content .section-item label span.card-label-4 {
+    font-weight: 300;
+    margin-top: 3px;
+}
+
+.card_rangeofprices  .card-content .section-item label span.card-label-3 {
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+.card_rangeofprices  .card-content .section-item label span.card-label-2 {
+    font-size: 18px;
+    font-weight: 300;
+    margin-top: 8px;
+}
+
+.card_rangeofprices  .card-content .section-item label span.card-label-1 {
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+#card_restrictions2_way3 .card-content .custom-row.allergens-list {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+    flex-direction: row;
+}
+
+#card_restrictions2_way3 .card-content .custom-row {
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+    width: 100%;
+}
+
+@media (min-width: 769px) {
+    #card_restrictions2_way3 .allergens-list {
+        -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    }
+    .add_dates{
+
+        max-width: 100%;
+
+    }
+}
+
+.add_dates{
+    position: relative;
+    width:100%;
+
+}
+
+
+.add_dates .one_date{
+    width: 100%;
+    float: left;
+    padding:10px;
+    -webkit-border-radius:;
+    -moz-border-radius:;
+    border-radius:10px;
+    border-style:solid;
+    border-width:1px;
+    margin: 20px 1px;
+}
+
+
+@media (max-width: 480px) {
+    .add_dates{
+        width:100%;
+
+    }
+
+}
+
+@media (min-width: 440px){
+    .add_dates .one_date{
+        width:46% ;
+    }
+}
+
+@media (min-width: 768px){
+    .add_dates .one_date{
+        width:30% ;
+    }
+}
+
+.one_date h3{
+    margin:5px 0px;
+}
+
+.calendar_footer{
+    width:100%;
+    float: left;
+}
+
+.section-item textarea{
+    width:480px;
+}
+
+.left-address{
+
+}
+
+.right-address{
+
+}
+
+textarea{
+    border-style:solid !important;
+    border-width:1px !important;
+}
+
+@media (max-width:360px){
+    #card_address .card-content .form-item{
+        width:300px;
+    }
+}
+
