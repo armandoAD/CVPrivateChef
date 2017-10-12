@@ -1,30 +1,49 @@
 $(document).ready(function () {
+
     var contadore = 0;
     $('#card_calendar_add_date').on('click',function(){
     var screenwidth = $(document).width();
     if(screenwidth > 768){
         if(contadore == 0){
-            $('#add_dates').append('<div class="one_date date_initial_class_100">            <h3>Seleccione la fecha y hora</h3>        <input type="datetime-local" name="way2[date][]">            </div>');
+            $('#add_dates').append('<div class="one_date date_initial_class_100">            <h4>Seleccione la fecha y hora</h4>         <div class="input-group date" id="one_date'+ contadore +'">            <input type="text" name="way2[date][]" class="form-control" />             <span class="input-group-addon">             <span class="fa fa-calendar"></span>             </span>             </div>                      </div>');
+            $('#one_date' + contadore).datetimepicker({
+                
+                sideBySide: true
+            });
             contadore++;
         }else{
 
             if(contadore == 1){
-                $('#add_dates').append('<div class="one_date date_initial_class_50">            <h3>Seleccione la fecha y hora</h3>        <input type="datetime-local" name="way2[date][]">            </div>');
+                $('#add_dates').append('<div class="one_date date_initial_class_50">            <h4>Seleccione la fecha y hora</h4>         <div class="form-group">            <div class="input-group date" id="one_date'+ contadore +'">            <input type="text" name="way2[date][]" class="form-control" />             <span class="input-group-addon">             <span class="fa fa-calendar"></span>             </span>             </div>            </div>          </div>');
+                $('#one_date' + contadore).datetimepicker({
+                    
+                    sideBySide: true
+                });
                 $('.one_date').removeClass('date_initial_class_100');
                 $('.one_date').addClass('date_initial_class_50');
                 contadore++;
             }else{
-                if(contadore == 2){
-                    $('#add_dates').append('<div class="one_date">            <h3>Seleccione la fecha y hora</h3>        <input type="datetime-local" name="way2[date][]">            </div>');
+                if(contadore => 2){
+                    $('#add_dates').append('<div class="one_date">            <h4>Seleccione la fecha y hora</h4>         <div class="form-group">            <div class="input-group date" id="one_date'+ contadore +'">            <input type="text" name="way2[date][]" class="form-control" />             <span class="input-group-addon">             <span class="fa fa-calendar"></span>             </span>             </div>            </div>          </div>');
+                    $('#one_date' + contadore).datetimepicker({
+                        
+                        sideBySide: true
+                    });
                     $('.one_date').removeClass('date_initial_class_100');
                     $('.one_date').removeClass('date_initial_class_50');
+                    contadore++;
                 }
             }
 
         }
 
     }else{
-        $('#add_dates').append('<div class="one_date">            <h3>Seleccione la fecha y hora</h3>        <input type="datetime-local" name="way2[date][]">            </div>');
+        $('#add_dates').append('<div class="one_date">            <h4>Seleccione la fecha y hora</h4>         <div class="form-group">            <div class="input-group date" id="one_date'+ contadore +'">            <input type="text" name="way2[date][]" class="form-control" />             <span class="input-group-addon">             <span class="fa fa-calendar"></span>             </span>             </div>            </div>          </div>');
+        $('#one_date' + contadore).datetimepicker({
+            
+            sideBySide: true
+        });
+        contadore++;
     }
 
 

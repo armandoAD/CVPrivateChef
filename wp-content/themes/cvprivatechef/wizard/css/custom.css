@@ -114,8 +114,7 @@
 
 
 section.active{
-    margin: auto;
-    margin-top:10%;
+    margin: 10% auto;
     padding: 10px;
 }
 
@@ -238,3 +237,22 @@ textarea{
     }
 }
 
+.bootstrap-datetimepicker-widget{
+    height:300px !important;
+}
+#card_address .card-content .form-item{
+    margin:auto;
+}
+
+.cal-cont{
+    width: 100%;
+    margin: auto;
+}
+
+.form-item{
+    margin:5px auto;
+}
+
+section[id^=card_] .card-content .form-item label span:nth-child(1){
+    font-size:15px;
+}

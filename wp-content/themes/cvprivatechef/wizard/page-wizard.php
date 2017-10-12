@@ -72,7 +72,7 @@ get_header();
 
         <input type="hidden" name="action" value="wizard_action">
 
-        <section id="card_address">
+        <section id="card_address" style="width: 100%; !important;">
             <div class="card-content">
                 <div class="card-title">
                     <h1>Nuestra dirección es</h1>
@@ -85,7 +85,7 @@ get_header();
                         </label>
                     </div>
                     <div class="right-address">
-                        <input type="text" id="frontend_userrequests_type_usereqAddress" name="address" />
+                       <center> <input type="text" id="frontend_userrequests_type_usereqAddress" name="address" /></center>
                     </div>
 
 
@@ -601,12 +601,12 @@ get_header();
 
 
 
-        <section id="card_calendar">
+        <section id="card_calendar" style="  width: 270px;">
             <div class="card-content">
                 <div class="card-title">
                     <h1>El día...</h1>
                 </div>
-                <div>
+                <div class="cal-cont">
                 <?php echo do_shortcode('[wpbs id="1" form="1" title="no"  legend="yes" language="es"]'); ?>
                 </div>
                 <div class="card-footer">
@@ -803,7 +803,7 @@ get_header();
                     <input name="way1[price]" type="radio" id="price1" class="price" value="Básico"  data-value="0" />
                     <label for="price1">
                         <span class="card-label-1">Básico</span>
-                        <span class="card-label-2">Precio por persona</span>
+                        <span class="card-label-2" style="margin-left:5px;"> Precio por persona</span>
                         <span class="card-label-3"></span>
                         <span class="card-label-4"></span>
                         <input type="hidden" name="way1[price1]" value="" class="pr_price1">
@@ -813,7 +813,7 @@ get_header();
                     <input name="way1[price]" type="radio" id="price2" class="price" value="Gourmet"  data-value="1" />
                     <label for="price2">
                         <span class="card-label-1">Gourmet</span>
-                        <span class="card-label-2">Precio por persona</span>
+                        <span class="card-label-2" style="margin-left:5px;"> Precio por persona</span>
                         <span class="card-label-3"></span>
                         <span class="card-label-4"></span>
                         <input type="hidden" name="way1[price2]" value="" class="pr_price2">
@@ -823,7 +823,7 @@ get_header();
                     <input name="way1[price]" type="radio" id="price3" class="price" value="Premium"  data-value="2" />
                     <label for="price3">
                         <span class="card-label-1">Premium</span>
-                        <span class="card-label-2">Precio por persona</span>
+                        <span class="card-label-2" style="margin-left:5px;"> Precio por persona</span>
                         <span class="card-label-3"></span>
                         <span class="card-label-4"></span>
                         <input type="hidden" name="way1[price3]" value="" class="pr_price3">
@@ -847,7 +847,7 @@ get_header();
                     <input name="way2[price_way2]" type="radio" id="price1_way2" class="price_way2" value="Básico"  data-value="0" />
                     <label for="price1_way2">
                         <span class="card-label-1">Básico</span>
-                        <span class="card-label-2">Precio por persona</span>
+                        <span class="card-label-2" style="margin-left:5px;"> Precio por persona</span>
                         <span class="card-label-3"></span>
                         <span class="card-label-4"></span>
                         <input type="hidden" name="way2[price1]" value="" class="pr_price1">
@@ -857,7 +857,7 @@ get_header();
                     <input name="way2[price_way2]" type="radio" id="price2_way2" class="price_way2" value="Gourmet"  data-value="1" />
                     <label for="price2_way2">
                         <span class="card-label-1">Gourmet</span>
-                        <span class="card-label-2">Precio por persona</span>
+                        <span class="card-label-2" style="margin-left:5px;"> Precio por persona</span>
                         <span class="card-label-3"></span>
                         <span class="card-label-4"></span>
                         <input type="hidden" name="way2[price2]" value="" class="pr_price2">
@@ -867,7 +867,7 @@ get_header();
                     <input name="way2[price_way2]" type="radio" id="price3_way2" class="price_way2" value="Premium"  data-value="2" />
                     <label for="price3_way2">
                         <span class="card-label-1">Premium</span>
-                        <span class="card-label-2">Precio por persona</span>
+                        <span class="card-label-2" style="margin-left:5px;"> Precio por persona</span>
                         <span class="card-label-3"></span>
                         <span class="card-label-4"></span>
                         <input type="hidden" name="way2[price3]" value="" class="pr_price3">
@@ -1077,17 +1077,19 @@ get_header();
 
 
 
-        <section id="card_userdetails">
+        <section id="card_userdetails" style="width: 100%;">
             <div class="card-content">
                 <div class="card-title">
                     <h1>Nuestra información de contacto es</h1>
                 </div>
                 <div class="form-item">
+
                     <label for="frontend_userrequests_type_usereqUserFullname">
                         <span class="icon-user-o"></span>
                         <span>Nombre:</span>
                     </label>
                     <input type="text" id="frontend_userrequests_type_usereqUserFullname" name="way1[name]" />
+
                 </div>
                 <div class="form-item">
                     <label for="frontend_userrequests_type_usereqUserEmail">

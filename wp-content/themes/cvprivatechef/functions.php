@@ -585,10 +585,16 @@ require get_parent_theme_file_path( '/inc/icon-functions.php' );
 
 function theme_add_bootstrap() {
 	wp_enqueue_style( 'bootstrap-css', '/wp-content/themes/cvprivatechef/assets/css/bootstrap.min.css' );
-	wp_enqueue_script( 'bootstrap-js','/wp-content/themes/cvprivatechef/assets/js/bootstrap.min.js', array(), '3.0.0', true );
+	wp_enqueue_script( 'bootstrap-js','/wp-content/themes/cvprivatechef/wizard/js/bootstrap.min.js', array(), '3.0.0', true );
+    wp_enqueue_script( 'moment-js','/wp-content/themes/cvprivatechef/wizard/datepicker/moment/min/moment.min.js', array(), '3.0.0', true );
+    wp_enqueue_script( 'datetimepicker-js','/wp-content/themes/cvprivatechef/wizard/datepicker/eonasdan-bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js', array(), '3.0.0', true );
+    wp_enqueue_style( 'datetimepicker-css', '/wp-content/themes/cvprivatechef/wizard/datepicker/eonasdan-bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.min.css' );
+
 }
 
 add_action( 'wp_enqueue_scripts', 'theme_add_bootstrap' );
+
+
 
 
 
@@ -1435,15 +1441,15 @@ function wizard_action() {
 
 
 
-
+                                                                           
                                                                    foreach($_POST['way2']['date'] as $date){
-                                                                        
-                                                                        $e = explode('T', $date);
+
+
                                                                         $message .= '
                                                                         
                                                                             <tr>
                                                                                 <td valign="top" style="padding:0in 0in 0in 0in">
-                                                                                   <p class="MsoNormal" style="line-height:14.25pt"><span style="font-family:&quot;Helvetica&quot;,sans-serif;color:#333333">'. $e[0] .' ' . $e[1] . '<u></u><u></u></span></p>
+                                                                                   <p class="MsoNormal" style="line-height:14.25pt"><span style="font-family:&quot;Helvetica&quot;,sans-serif;color:#333333">'. $date . '<u></u><u></u></span></p>
                                                                                 </td>
                                                                             </tr>
                                                                         
